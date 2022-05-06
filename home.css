@@ -1,0 +1,148 @@
+:root {
+    --bg-crema: #f7f1e1;
+    --azul: #5ac4e4;
+    --azul-fuerte: #0169e2;
+    --blanco: #ffffff;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-crema);
+}
+
+
+.header__container{
+    position: relative; 
+    top: -16px;
+}
+
+.navbar__container{
+    width: 100vw;
+}
+
+.navbar__ul__element{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+}
+
+
+nav .navbar__ul__element{
+    list-style: none;
+    background-color: var(--azul-fuerte);
+}
+
+nav .navbar__ul__element li{
+    display: inline-block;
+    color: var(--blanco);
+    width: 100%;
+    height: 100%;
+    padding-top: 11px;
+}
+
+nav .navbar__ul__element li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+nav .navbar__ul__element 
+li:nth-child(1),
+li:nth-child(2),
+li:nth-child(3),
+li:nth-child(4),
+li:nth-child(5){
+    position: relative;
+    right: 80px;
+}
+
+
+
+nav .navbar__ul__element 
+li:nth-child(1), 
+li:nth-child(2),
+li:nth-child(3),
+li:nth-child(4) {
+    border-right: 1px solid var(--bg-crema);
+}
+
+nav .navbar__ul__element 
+li:nth-child(2), 
+li:nth-child(3),
+li:nth-child(4),
+li:nth-child(5) {
+    text-align: center;
+}
+
+.li__logo{
+    left: 2px;
+}
+
+.li__logo:hover{
+    cursor: pointer;
+}
+
+.li__home:hover{
+    cursor: pointer;
+}
+
+.li__recetas:hover {
+    cursor: pointer;
+}
+
+.li__comprar:hover {
+    cursor: pointer;
+}
+
+.li__search .search__container {
+    position: relative;
+    left: 35px;
+    width: 250px;
+    height: 25px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0 auto;
+
+
+}
+
+.search__container .search__icon{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    right: 30px;
+    cursor: pointer;
+}
+
+.li__search input {
+    width: 160px;
+    height: 20px;
+    border: none;
+    outline: none;
+    position: relative;
+    right: 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
