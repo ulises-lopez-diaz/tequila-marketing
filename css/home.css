@@ -5,6 +5,7 @@
     --azul-titulo: #0e1d51;
     --naranja: #ffa102;
     --blanco: #ffffff;
+    --rosa-mexicano: #d30055;
 }
 
 html{
@@ -60,7 +61,7 @@ body{
 
 nav .navbar__ul__element{
     list-style: none;
-    background-color: var(--azul-fuerte);
+    background-color: var(--rosa-mexicano);
 }
 
 nav .navbar__ul__element li{
@@ -222,7 +223,7 @@ main {
 .section_recetas_tonic .tonic_img {
     width: 50%;
     height: 50%;
-    object-fit: cover;
+    object-fit: contain;
     position: relative;
     left: 100px;
 }
