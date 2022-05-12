@@ -2,6 +2,8 @@
     --bg-crema: #f7f1e1;
     --azul: #5ac4e4;
     --azul-fuerte: #0169e2;
+    --azul-titulo: #0e1d51;
+    --naranja: #ffa102;
     --blanco: #ffffff;
 }
 
@@ -9,11 +11,29 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 * {
     font-family: 'Roboto', sans-serif;
 }
+
+p {
+    overflow-wrap: -word;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
 
 body{
     margin: 0;
@@ -145,4 +165,93 @@ main {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.hero{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-auto-rows: 550px;
+    border-bottom: 1px solid #ddd;
+}
+
+.info {
+    align-self: flex-start;
+    background-color: var(--naranja);
+    height: 78.5%;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.info_title {
+    color: var(--blanco);
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.info_subtitle {
+    color: var(--blanco);
+    font-size: 16px;
+    margin-bottom: 24px;
+    padding-left: 20px;
+}
+
+.hero_img {
+    width: 90%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    top: -60px;
+}
+
+.section_recetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 15px;
+    margin-top: 80px;
+    background-color: #227d00;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+
+.section_recetas_tonic .tonic_img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    position: relative;
+    left: 100px;
+}
+
+.section_recetas_tonic .tonic_title {
+    color: #daf9d7;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.section_recetas_tonic .tonic_button {
+    background-color: #008CBA;
+}
+
+.section_recetas_tonic .boton_tequila_ver {
+    position: relative;
+    left: 150px;
+    color: #d9f8d6;
+}
+
+.section_recetas_tonic .boton_tequila_ver .tonic_button {
+    cursor: pointer;
+    background-color: #002d1b;
+    color: #daf9d7;
+    border-radius: 5px;
+}
+
+
+
+
 
