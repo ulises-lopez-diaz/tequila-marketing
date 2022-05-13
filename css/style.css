@@ -2,9 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    
   }
   
+  body{
+    background-color: #ebd077;
+  }
+
   .form-register {
     width: 400px;
     background: #24303c;
