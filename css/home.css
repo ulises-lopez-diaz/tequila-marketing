@@ -214,8 +214,12 @@ main {
 .info_subtitle {
     color: var(--blanco);
     font-size: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
     padding-left: 20px;
+}
+
+h4.info_subtitle.info_card{
+    font-weight: bold;
 }
 
 .hero_img {
