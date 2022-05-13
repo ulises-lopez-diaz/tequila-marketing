@@ -4,13 +4,12 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <div id="head-placeholder"></div>
     <title>Donaciones</title>
-    </div>
 
-	<div id="footer-placeholder"></div>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href=".\css\style.css">
+	  <div id="footer-placeholder"></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href=".\css\style.css">
 </head>
 <body>
   <section class="form-register">
@@ -75,3 +74,12 @@
 </section>
 </body>
 </html>
+
+<script>
+	//Carga las librerias/metas/scripts, el menu de navegacion y el pie de pagina para todo html
+	$(function(){
+    	$("#nav-placeholder").load("navbar.html");
+		$("#footer-placeholder").load("footer.html");
+		$("#head-placeholder").load("head.html");
+    });
+</script>
