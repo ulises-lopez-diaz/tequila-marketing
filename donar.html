@@ -4,8 +4,6 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <div id="head-placeholder"></div>
     <title>Donaciones</title>
-
-	  <div id="footer-placeholder"></div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -71,14 +69,15 @@
   <a href = "https://www.spanishbowl.com/wp-content/uploads/2020/04/gracias-por-tu-compra.jpg">
     <input type="image" name = "img1" src=".\images\donar_button.png" alt="Image button" height="100" width="340" >
   </a>
-</section>
+  </section>
+<div id="footer-placeholder"></div>
 </body>
 </html>
 
 <script>
 	//Carga las librerias/metas/scripts, el menu de navegacion y el pie de pagina para todo html
 	$(function(){
-    	$("#nav-placeholder").load("navbar.html");
+    $("#nav-placeholder").load("navbar.html");
 		$("#footer-placeholder").load("footer.html");
 		$("#head-placeholder").load("head.html");
     });
